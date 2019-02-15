@@ -1,0 +1,180 @@
+body {
+  background-color: #111;
+  color: white;
+  margin: 0;
+}
+
+ul { 
+  list-style: none;
+  padding: 0;
+}
+
+h1 { 
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2em;
+  letter-spacing: 5px;
+}
+
+section { text-align: center; }
+
+span {
+  background-color: #ccc;
+  color: #222;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+p { margin: 0 }
+
+.border { 
+  border: 2px solid #bbb;
+  padding: 5px;
+  margin: 0 10px;
+}
+
+.list { 
+  position: relative;
+  min-height: 200px;
+  max-width: 350px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list .vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  position: absolute;
+  border: 2px solid #bbb;
+  padding: 5px;
+  height: 200px;
+  font-family: 'Graduate', cursive;
+}
+
+.list.left .vertical { left: 10px; }
+.list.right .vertical { right: 10px; }
+
+.list.left ul { 
+  padding-left: 70px; 
+  text-align: left;
+}
+.list.right ul { 
+  padding-right: 40px; 
+  text-align: right;
+}
+
+section#title #logo img { max-width: 200px; }
+
+section#dates .date {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  max-width: 300px;
+  margin: auto;
+  justify-items: center;
+  margin-top: 10px;
+}
+
+section#dates .date .day {
+  font-size: 2em;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bolder;
+}
+section#dates .date .month {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bolder;
+}
+section#dates .date h3 {
+  font-family: 'Graduate', cursive;
+  font-weight: bolder;
+  align-self: flex-end;
+}
+section#dates .date p {
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bolder;
+}
+
+section#dates .date * {
+  margin: 0;
+}
+
+section#description h3,
+section#description p,
+section#description h4{
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+
+.rot1 {
+  -webkit-transform: rotateZ(1deg); /* Safari */
+  transform: rotateZ(1deg);
+}
+.rot-1 {
+  -webkit-transform: rotateZ(359deg); /* Safari */
+  transform: rotateZ(359deg);
+}
+.rot2 {
+  -webkit-transform: rotateZ(2deg); /* Safari */
+  transform: rotateZ(2deg);
+}
+.rot-2 {
+  -webkit-transform: rotateZ(358deg); /* Safari */
+  transform: rotateZ(358deg);
+}
+.rot3 {
+  -webkit-transform: rotateZ(3deg); /* Safari */
+  transform: rotateZ(3deg);
+}
+.rot-3 {
+  -webkit-transform: rotateX(357deg); /* Safari */
+  transform: rotateX(357deg);
+}
+.rot4 {
+  -webkit-transform: rotateZ(4deg); /* Safari */
+  transform: rotateZ(4deg);
+}
+.rot-4 {
+  -webkit-transform: rotateX(356deg); /* Safari */
+  transform: rotateX(356deg);
+}
+
+
+/* -------------------           DESKTOP         ---------------------- */
+
+@media only screen and (min-width: 600px) {
+  body {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+  }
+
+  section#title {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  section#dates {
+    grid-column: 2/4;
+    grid-row: 2/4;
+  }
+  section#description {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  section#activities {
+    grid-column: 4/5;
+    grid-row: 1/3;
+  }
+
+  section#topics {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  section#principles {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+}

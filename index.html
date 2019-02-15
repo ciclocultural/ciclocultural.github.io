@@ -4,12 +4,105 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Ciclo cutural</title>
-
+  <title>Ciclocutural</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Aldrich|Amatic+SC:400,700|Graduate|Passero+One|Permanent+Marker|Shadows+Into+Light|Staatliches" rel="stylesheet"> 
 </head>
 
 <body>
-  <h1>Ciclo cultural</h1>
-  <h2>Hola Citlalli</h2>
+  <section id="title">
+    <h1>CICLOCULTURAL</h1>
+    <div id="logo">
+      <img src="https://img0.etsystatic.com/000/0/5889672/il_570xN.327639346.jpg" alt="">
+    </div>
+  </section>
+  <section id="dates">
+    <div class="date">
+      <div class="day"><span>vie 5</span></div>
+      <h3><span class="rot1">Okupa</span> <span class="rot-2">Che</span></h3>
+      <div class="month">ABRIL</div>
+      <p>Ciudark Universitaria</p>
+    </div>
+    <div class="date">
+      <div class="day"><span>sab 6</span></div>
+      <h3><span class="rot-2">Claveria</span> <span class="rot3">22</span></h3>
+      <div class="month">ABRIL</div>
+      <p>Azcapunk</p>
+    </div>
+    <div class="date">
+      <div class="day"><span>dom 7</span></div>
+      <h3><span>Callejón</span> <span>San</span> <span>Ignacio</span></h3>
+      <div class="month">ABRIL</div>
+      <p>Centro Histérico</p>
+    </div>
+  </section>
+  <section id="description">
+    <h3><span>ENCUENTRO</span> <span>INDEPENDIENTE</span></h3>
+    <p class="border">~ sin patrocinios ni fondos estatales ~</p>
+    <h4><span>Auto-organizado</span> <span>por</span> <span>colectivxs</span> <span>ciclistas</span></h4>
+    <div class="list left">
+      <div class="vertical">OBJETIVOS</div>
+      <ul>
+        <li><span>Compartir</span></li>
+        <li><span>Difundir</span></li>
+        <li><span>Vincular</span></li>
+        <li><span>Mapear</span></li>
+        <li><span>Reencontrar</span></li>
+        <li><span>Transformar</span></li>
+        <li><span>Destruir</span></li>
+      </ul>
+    </div>
+  </section>
+  <section id="activities">
+    <div class="list right">
+      <div class="vertical">ACTIVIDADES</div>
+      <ul>
+        <li><span>Talleres</span></li>
+        <li><span>Mesas</span> <span>de</span> <span>trabajo</span></li>
+        <li><span>Charlas</span></li>
+        <li><span>Bici</span> <span>Tianguis</span></li>
+        <li><span>Expo</span> <span>Bici</span> <span>Arte</span></li>
+        <li><span>Rodadas</span></li>
+        <li><span>Fiestón</span></li>
+      </ul>
+    </div>
+  </section>
+  <section id="topics">
+    <div class="list left">
+      <div class="vertical">TEMÁTICAS</div>
+      <ul>
+        <li><span>Bici</span> <span>Activismo</span></li>
+        <li><span>Mujeres</span> <span>y</span> <span>cuerpxs</span> <span>no</span> <span>binarixs</span></li>
+        <li><span>Trabajo</span> <span>autogestivo</span></li>
+        <li><span>Redes</span> <span>de</span> <span>ciclistas</span></li>
+        <li><span>Cicloviajerxs</span></li>
+        <li><span>Bici</span> <span>máquinas</span></li>
+        <li><span>Autocuidados</span> <span>para</span> <span>ciclistas</span></li>
+        <li><span>Reapropiación</span> <span>espacios</span> <span>públicos</span></li>
+        <li><span>Bici</span> <span>Tequios</span></li>
+        <li><span>Bici</span> <span>Infancias</span></li>
+        <li><span>Incidencia</span> <span>política</span></li>
+      </ul>
+    </div>
+  </section>
+  <section id="principles">
+    <div class="list right">
+      <div class="vertical ">PRINCIPIOS</div>
+      <ul>
+        <li><span>Organización</span> <span>vertical</span></li>
+        <li><span>Autogestión</span></li>
+        <li><span>Vínculo</span> <span>con</span> <span>Espacios</span> <span>Autónomos</span></li>
+        <li><span>Acción</span> <span>directa</span></li>
+        <li><span>PROHIBIDAS</span> <span>actitudes</span> <span>machistas,</span> <span>xenófobas,</span> <span>racistas</span> <span>y/o</span> <span>clasistas</span></li>
+      </ul>
+    </div>
+  </section>
+  <script>
+    let spans = [...document.getElementsByTagName('span')]
+    let rotationClasses = ['rot1', 'rot-1', 'rot2', 'rot-2', 'rot3', 'rot-3', 'rot4','rot-4']
+    spans.forEach(span => {
+      span.className = rotationClasses[Math.floor(Math.random()*rotationClasses.length)]
+    })
+  </script>
 </body>
 </html>
