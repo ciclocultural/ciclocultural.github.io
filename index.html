@@ -100,9 +100,11 @@
   <script>
     let spans = [...document.getElementsByTagName('span')]
     let rotationClasses = ['rot1', 'rot-1', 'rot2', 'rot-2', 'rot3', 'rot-3', 'rot4','rot-4']
-    spans.forEach(span => {
-      span.className = rotationClasses[Math.floor(Math.random()*rotationClasses.length)]
-    })
+    setInterval(() => {
+      spans.forEach(span => {
+        span.className = rotationClasses[Math.floor(Math.random()*rotationClasses.length)]
+      })
+    },5000)
   </script>
 </body>
 </html>
