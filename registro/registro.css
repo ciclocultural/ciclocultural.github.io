@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: #aaa;
+  padding: 0 10px;
 }
 
 #submit {
@@ -9,6 +10,7 @@ body {
   right: 10px;
   background-color: red;
 }
+
 
 textarea {
   max-width: 90vw;

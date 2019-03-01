@@ -8,25 +8,34 @@
   <link rel="stylesheet" href="registro.css">
 </head>
 <body>
-  <h1>Convocatoria actividades para Encuentro CicloCultural</h1>
+  <h1>Registro actividades para Encuentro CicloCultural</h1>
   <p>A todxs lxs colectivxs, organizaciones, grupos ciclistas, activistas, productorxs independientes, bicimensajerxs, bicimecánicxs, indivualidades y cooperativas cleteras del Valle de México y alrededores, se les INVITA a formar parte del programa de actividades del “Encuentro ciclocultural” y participar en las comisiones .
 
   </p>
   <form class="registro-form">
+    <hr>
     <div>
-      <p>1. Quiero proponer una actividad como...</p>
+      <p><b>1. Quiero proponer una actividad como...</b></p>
       <div>
         <label for="">Invidue</label><input type="radio" value="individue" name="tipopersona">
         <label for="">Colectivx</label><input type="radio" value="colectivx" name="tipopersona">
       </div>
     </div>
-    <br>
+    <hr>
     <div>
-      <label>2. Nombre (Persona / Colectivx)</label>
+      <br>
+      <label><b>2. Nombre (Persona / Colectivx)</b></label>
       <input type="text" name="nombre" id="">
     </div>
+    <hr>
     <div>
-      <p>3. Tipo de actividad</p>
+      <p><b>3. ¿Qué tipo de labor realizas(n) en tu proyecto individual o de su colectivo?</b></p>
+      <textarea name="tipolabor" id="" cols="30" rows="10"></textarea>
+    </div>
+    <hr>
+    <div>
+      <p><b>4. Tipo de actividad</b></p>
+      <p>(Para registrar varias actividades. Ej. Taller y puesto. Por favor, llena dos registros distintos )</p>
       <div>
           <div><input name="tipoactividad" type="radio" value="taller"><label for="">Taller</label></div>
           <div><input name="tipoactividad" type="radio" value="plática / charla"><label for="">Plática / Charla</label></div>
@@ -37,63 +46,97 @@
           <div><input name="tipoactividad" type="radio" value="otro"><label for="">Otro </label><input name="tipoactividad" type="text"></div>
       </div>
     </div>
+    <hr>
+    <div class="solotianguis">
+      <p><b>(SOLO SI ESCOGISTE OPCIÓN DE PUESTO EN TIANGUIS)</b></p>
+      <p><b>4.1  ¿Qué productos ofrecerías en el tianguis?</b></p>
+      <textarea name="productos" id="" cols="30" rows="10"></textarea>
+    </div>
+    <hr>
+    <div class="solotianguis">
+      <p><b>(SOLO SI ESCOGISTE OPCIÓN DE PUESTO EN TIANGUIS)</b></p>
+      <p>No se cobrará un precio por poner un puesto en el tianguis, pero dado que tenemos que asumir costos por el encuentro</p>
+      <p><b>¿Qué porcentaje consideras justo para aportar? (donación consciente)</b></p>
+      <input type="text" name="coopera">
+    </div>
+    <hr>
     <div>
-      <p>4. Temática de la actividad</p>
+      <p><b>5. Temática(s) de la actividad</b></p>
       <div>
-          <div><input name="temaactividad" type="radio" value="biciactivismo"><label for="">Bici-Activismo</label></div>
-          <div><input name="temaactividad" type="radio" value="mujerescuerpxsnobinarixs"><label for="">Mujeres y cuerpxs no binarixs en bicicleta</label></div>
-          <div><input name="temaactividad" type="radio" value="trabajoautogestivo"><label for="">Trabajo autogestivo</label></div>
-          <div><input name="temaactividad" type="radio" value="redesciclistas"><label for="">Redes de ciclistas</label></div>
-          <div><input name="temaactividad" type="radio" value="viajebicicleta"><label for="">Viaje en bicicleta</label></div>
-          <div><input name="temaactividad" type="radio" value="biciarte"><label for="">Bici-arte</label></div>
-          <div><input name="temaactividad" type="radio" value="bicimaquinas"><label for="">Bici-Máquinas</label></div>
-          <div><input name="temaactividad" type="radio" value="reacreacion"><label for="">Reacreación</label></div>
-          <div><input name="temaactividad" type="radio" value="reapropiacion"><label for="">Reapropiación de espacios públicos</label></div>
-          <div><input name="temaactividad" type="radio" value="bicitequio"><label for="">Bici-Tequio / Trabajo comunitario</label></div>
-          <div><input name="temaactividad" type="radio" value="biciinfancia"><label for="">Bici-Infancia</label></div>
-          <div><input name="temaactividad" type="radio" value="incidenciapolítica"><label for="">Incidencia política</label></div>
-          <div><input name="temaactividad" type="radio"><label for="">Otro </label><input name="otrotemaactividad" type="text"></div>
+          <div><input name="temaactividad" type="checkbox" value="biciactivismo"><label for="">Bici-Activismo</label></div>
+          <div><input name="temaactividad" type="checkbox" value="mujerescuerpxsnobinarixs"><label for="">Mujeres y cuerpxs no binarixs en bicicleta</label></div>
+          <div><input name="temaactividad" type="checkbox" value="trabajoautogestivo"><label for="">Trabajo autogestivo</label></div>
+          <div><input name="temaactividad" type="checkbox" value="redesciclistas"><label for="">Redes de ciclistas</label></div>
+          <div><input name="temaactividad" type="checkbox" value="viajebicicleta"><label for="">Viaje en bicicleta</label></div>
+          <div><input name="temaactividad" type="checkbox" value="biciarte"><label for="">Bici-arte</label></div>
+          <div><input name="temaactividad" type="checkbox" value="bicimaquinas"><label for="">Bici-Máquinas</label></div>
+          <div><input name="temaactividad" type="checkbox" value="reacreacion"><label for="">Reacreación</label></div>
+          <div><input name="temaactividad" type="checkbox" value="reapropiacion"><label for="">Reapropiación de espacios públicos</label></div>
+          <div><input name="temaactividad" type="checkbox" value="bicitequio"><label for="">Bici-Tequio / Trabajo comunitario</label></div>
+          <div><input name="temaactividad" type="checkbox" value="biciinfancia"><label for="">Bici-Infancia</label></div>
+          <div><input name="temaactividad" type="checkbox" value="incidenciapolítica"><label for="">Incidencia política</label></div>
+          <div><input name="temaactividad" type="checkbox"><label for="">Otro </label><input name="otrotemaactividad" type="text"></div>
       </div>
     </div>
+    <hr>
     <div>
-      <p>5. Descripción de la actividad</p>
+      <p><b>6. Descripción de la actividad</b></p>
       <textarea name="descripcion" id="" cols="60" rows="10" placeholder="Duración, número de personas, a quién va dirigido... Expláyate"></textarea>
     </div>
+    <hr>
     <div>
-      <p>6. ¿Qué require mi activad?</p>
+      <p><b>7. ¿Qué require mi activad?</b></p>
       <textarea name="requerimientos" id="" cols="60" rows="10" placeholder="Mesa, sillas, tipo de espacio, materiales, proyector, etc..."></textarea>
     </div>
+    <hr>
     <div>
-      <p>7. Se realizará una rifa para cubrir los gastos de organización y apoyo a contingente rumbo al BikeBike Tijuana 2019</p>
-      <p>¿Quieres donar algún producto / servicio para la rifa?</p>
+      <p>8. Se realizará una rifa para cubrir los gastos de organización y apoyo a contingente rumbo al BikeBike Tijuana 2019</p>
+      <p><b>¿Quieres donar algún producto / servicio para la rifa?</b></p>
       <div>
-        <label for="">Sí</label><input type="radio" name="rifa">
-        <label for="">No</label><input type="radio" name="rifa">
+        <label for="">Sí</label><input type="radio" name="rifa" value="si">
+        <label for="">No</label><input type="radio" name="rifa" value="no">
       </div>
     </div>
+    <hr>
     <div>
-      <p>8. Contacto(s)</p>
+      <p><b>9. Contacto(s)</b></p>
       <div>
-        <label for="">Celular</label><input type="text" name="celular">
+        <label for=""><b>Celular: </b></label><input type="text" name="celular">
       </div>
       <div>
-        <label for="">Correo Electrónico</label><input type="text" name="email">
+        <label for=""><b>Correo Electrónico: </b></label><input type="text" name="email">
       </div>
       <div>
-        <label for="">Red Social</label><input type="text" name="redsocial">
+        <label for=""><b>Red Social: </b></label><input type="text" name="redsocial">
       </div>
     </div>
+    <hr>
     <div>
       <p>
-        9. ¿Quieres participar en los tequios de preparación de los espacios del encuentro?
+        <b>10. ¿Quieres participar en los tequios de preparación de los espacios del encuentro?</b>
       </p>
       <div>
         <label for="">Sí</label><input type="radio" name="quierotequio" value="si">
         <label for="">No</label><input type="radio" name="quierotequio" value="no">
       </div>
     </div>
+    <hr>
     <div>
-      <button id="submit" type="submit">Guardar</button>
+      <p>Haremos unas proyecciones audiovisuales con la temática de la bicicleta</p>
+      <p><b>¿Tienes sugerencias o te gustaría ver proyectado algún corto o película en específico?</b></p>
+      <textarea name="pelis" id="" cols="60" rows="10"></textarea>
+    </div>
+    <hr>
+    <div>
+      <p>Sucederá un Allycat con temática de espacios autogestivos, autónomos, independientes. </p>
+      <p>Alleycat es una carrera informar en bicicleta, en la cual se simula un día de trabajo haciendo bicimensajería</p>
+      <p><b>¿Tienes alguna recomendación o te gustaría que tu espacio sea parte de los check points del alleycat?</b></p>
+      <textarea name="allycat" id="" cols="60" rows="10"></textarea>
+    </div>
+    <br>
+    <br>
+    <div>
+      <button id="submit" type="submit">ENVIAR</button>
     </div>
   </form>
   <script src="./registro.js"></script>
