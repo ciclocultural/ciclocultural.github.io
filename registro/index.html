@@ -5,60 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="registro.css">
 </head>
 <body>
   <h1>Convocatoria actividades para Encuentro CicloCultural</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nesciunt magni sequi. Ipsam labore velit repellat pariatur aperiam qui ea adipisci praesentium odio! Itaque deserunt, veniam eaque quod velit quae nihil non sit necessitatibus quo sed est ullam nesciunt veritatis. Minima, dolor. Id fuga aliquid totam odio ab facilis recusandae.</p>
-  <form action="">
+  <p>A todxs lxs colectivxs, organizaciones, grupos ciclistas, activistas, productorxs independientes, bicimensajerxs, bicimecánicxs, indivualidades y cooperativas cleteras del Valle de México y alrededores, se les INVITA a formar parte del programa de actividades del “Encuentro ciclocultural” y participar en las comisiones .
+
+  </p>
+  <form class="registro-form">
     <div>
       <p>1. Quiero proponer una actividad como...</p>
       <div>
-        <label for="">Invidualidad</label><input type="radio" name="tipo-persona">
-        <label for="">Colectivx</label><input type="radio" name="tipo-persona">
+        <label for="">Invidue</label><input type="radio" value="individue" name="tipopersona">
+        <label for="">Colectivx</label><input type="radio" value="colectivx" name="tipopersona">
       </div>
     </div>
+    <br>
     <div>
       <label>2. Nombre (Persona / Colectivx)</label>
-      <input type="text" name="" id="">
+      <input type="text" name="nombre" id="">
     </div>
     <div>
       <p>3. Tipo de actividad</p>
       <div>
-          <div><input name="tipo-actividad" type="radio"><label for="">Taller</label></div>
-          <div><input name="tipo-actividad" type="radio"><label for="">Plática / Charla</label></div>
-          <div><input name="tipo-actividad" type="radio"><label for="">Mesa de discusión</label></div>
-          <div><input name="tipo-actividad" type="radio"><label for="">Presentación de proyecto</label></div>
-          <div><input name="tipo-actividad" type="radio"><label for="">Puesto en el Tianguis Cletero</label></div>
-          <div><input name="tipo-actividad" type="radio"><label for="">Actividad Artística</label></div>
-          <div><input name="tipo-actividad" type="radio"><label for="">Otro </label><input name="tipo-actividad" type="text"></div>
+          <div><input name="tipoactividad" type="radio" value="taller"><label for="">Taller</label></div>
+          <div><input name="tipoactividad" type="radio" value="plática / charla"><label for="">Plática / Charla</label></div>
+          <div><input name="tipoactividad" type="radio" value="mesa de discusión"><label for="">Mesa de discusión</label></div>
+          <div><input name="tipoactividad" type="radio" value="presentación de proyecto"><label for="">Presentación de proyecto</label></div>
+          <div><input name="tipoactividad" type="radio" value="puesto en el tianguis cletero"><label for="">Puesto en el Tianguis Cletero</label></div>
+          <div><input name="tipoactividad" type="radio" value="actividad artística"><label for="">Actividad Artística</label></div>
+          <div><input name="tipoactividad" type="radio" value="otro"><label for="">Otro </label><input name="tipoactividad" type="text"></div>
       </div>
     </div>
     <div>
       <p>4. Temática de la actividad</p>
       <div>
-          <div><input name="tema-actividad" type="radio"><label for="">Bici-Activismo</label></div>
-          <div><input name="tema-actividad" type="radio"><label for="">Mujeres y cuerpxs no binarixs en bicicleta</label></div>
-          <div><input name="tema-actividad" type="radio"><label for="">Trabajo autogestivo</label></div>
-          <div><input name="tema-actividad" type="radio"><label for="">Redes de ciclistas</label></div>
-          <div><input name="tema-actividad" type="radio"><label for=""></label>Viaje en bicicleta</label></div>
-          <div><input name="tema-actividad" type="radio"><label for="">Bici-arte</label></div>
-          <div><input name="tema-actividad" type="radio"><label for="">Bici-Máquinas</label></div>
-          <div><input name="tema-actividad" type="radio"><label for="">Reacreación</label></div>
-          <div><input name="tema-actividad" type="radio"><label for="">Salud y autocuidados para ciclistas</label></div>
-          <div><input name="tema-actividad" type="radio"><label for="">Reapropiación de espacios públicos</label></div>
-          <div><input name="tema-actividad" type="radio"><label for="">Bici-Tequio / Trabajo comunitario</label></div>
-          <div><input name="tema-actividad" type="radio"><label for="">Bici-Infancia</label></div>
-          <div><input name="tema-actividad" type="radio"><label for="">Incidencia política</label></div>
-          <div><input name="tema-actividad" type="radio"><label for="">Otro </label><input name="tema-actividad" type="text"></div>
+          <div><input name="temaactividad" type="radio" value="biciactivismo"><label for="">Bici-Activismo</label></div>
+          <div><input name="temaactividad" type="radio" value="mujerescuerpxsnobinarixs"><label for="">Mujeres y cuerpxs no binarixs en bicicleta</label></div>
+          <div><input name="temaactividad" type="radio" value="trabajoautogestivo"><label for="">Trabajo autogestivo</label></div>
+          <div><input name="temaactividad" type="radio" value="redesciclistas"><label for="">Redes de ciclistas</label></div>
+          <div><input name="temaactividad" type="radio" value="viajebicicleta"><label for="">Viaje en bicicleta</label></div>
+          <div><input name="temaactividad" type="radio" value="biciarte"><label for="">Bici-arte</label></div>
+          <div><input name="temaactividad" type="radio" value="bicimaquinas"><label for="">Bici-Máquinas</label></div>
+          <div><input name="temaactividad" type="radio" value="reacreacion"><label for="">Reacreación</label></div>
+          <div><input name="temaactividad" type="radio" value="reapropiacion"><label for="">Reapropiación de espacios públicos</label></div>
+          <div><input name="temaactividad" type="radio" value="bicitequio"><label for="">Bici-Tequio / Trabajo comunitario</label></div>
+          <div><input name="temaactividad" type="radio" value="biciinfancia"><label for="">Bici-Infancia</label></div>
+          <div><input name="temaactividad" type="radio" value="incidenciapolítica"><label for="">Incidencia política</label></div>
+          <div><input name="temaactividad" type="radio"><label for="">Otro </label><input name="otrotemaactividad" type="text"></div>
       </div>
     </div>
     <div>
       <p>5. Descripción de la actividad</p>
-      <textarea name="" id="" cols="60" rows="10" placeholder="Duración, número de personas, a quién va dirigido... Expláyate"></textarea>
+      <textarea name="descripcion" id="" cols="60" rows="10" placeholder="Duración, número de personas, a quién va dirigido... Expláyate"></textarea>
     </div>
     <div>
       <p>6. ¿Qué require mi activad?</p>
-      <textarea name="" id="" cols="60" rows="10" placeholder="Mesa, sillas, tipo de espacio, materiales, proyector, etc..."></textarea>
+      <textarea name="requerimientos" id="" cols="60" rows="10" placeholder="Mesa, sillas, tipo de espacio, materiales, proyector, etc..."></textarea>
     </div>
     <div>
       <p>7. Se realizará una rifa para cubrir los gastos de organización y apoyo a contingente rumbo al BikeBike Tijuana 2019</p>
@@ -69,7 +72,7 @@
       </div>
     </div>
     <div>
-      <p>Contacto(s)</p>
+      <p>8. Contacto(s)</p>
       <div>
         <label for="">Celular</label><input type="text" name="celular">
       </div>
@@ -77,10 +80,24 @@
         <label for="">Correo Electrónico</label><input type="text" name="email">
       </div>
       <div>
-        <label for="">Red Social</label><input type="text" name="red-social">
+        <label for="">Red Social</label><input type="text" name="redsocial">
       </div>
     </div>
-    <div></div>
+    <div>
+      <p>
+        9. ¿Quieres participar en los tequios de preparación de los espacios del encuentro?
+      </p>
+      <div>
+        <label for="">Sí</label><input type="radio" name="quierotequio" value="si">
+        <label for="">No</label><input type="radio" name="quierotequio" value="no">
+      </div>
+    </div>
+    <div>
+      <button id="submit" type="submit">Guardar</button>
+    </div>
   </form>
+  <script src="./registro.js"></script>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 </html>
