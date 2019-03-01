@@ -9,3 +9,7 @@ body {
   right: 10px;
   background-color: red;
 }
+
+textarea {
+  max-width: 90vw;
+}
