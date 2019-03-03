@@ -182,7 +182,7 @@ section#description h4{
      opacity: 1;
   }
   to {
-     opacity: 0;
+     opacity: 0.3;
   }
 }
 
