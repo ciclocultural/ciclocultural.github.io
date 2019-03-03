@@ -1,7 +1,16 @@
 body {
   background-color: #111;
   color: white;
-  margin: 0;
+  margin: 0;position: relative;
+}
+
+section#images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top:0;
+  overflow: hidden;
 }
 
 ul { 
@@ -28,13 +37,15 @@ p { margin: 0 }
 
 .border { 
   border: 2px solid #bbb;
-  padding: 5px;
+  padding: 15px;
   margin: 0 10px;
+  background-color: #111;
 }
 
 .list { 
   position: relative;
   min-height: 200px;
+  max-height: 300px;
   max-width: 350px;
   margin: auto;
   display: flex;
@@ -64,7 +75,19 @@ p { margin: 0 }
   text-align: right;
 }
 
-section#title #logo img { max-width: 200px; }
+section#title #logo img { 
+  max-width: 300px; 
+  margin-top: 50px;
+  background-color: #111;
+}
+.imgcontainer {
+  height: 300px;
+}
+
+.imgcontainer img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
 section#dates .date {
   display: grid;
@@ -93,6 +116,7 @@ section#dates .date h3 {
 section#dates .date p {
   font-family: 'Shadows Into Light', cursive;
   font-weight: bolder;
+  text-shadow: #111 1px 1px 1px;
 }
 
 section#dates .date * {
@@ -105,6 +129,7 @@ section#description h4{
   font-family: 'Shadows Into Light', cursive;
   font-weight: bolder;
   letter-spacing: 2px;
+  margin-bottom: 0;
 }
 
 
@@ -141,19 +166,15 @@ section#description h4{
   transform: rotateX(356deg);
 }
 
-div#registro {
-  margin: 30px 0;
-  padding: 15px;
-  border: 1px solid white;
-}
-
-
-div#registro a {
+.border a {
   color: white;
   animation-duration: 1000ms;
   animation-name: blink;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  margin: 20px;
+  font-family: 'Shadows Into Light', cursive;
+  text-transform: uppercase
 }
 
 @keyframes blink {
@@ -165,6 +186,30 @@ div#registro a {
   }
 }
 
+@media only screen and (max-width: 900px) {
+  section#images #bike {
+    top: 80%;
+    right: 0;
+    width: 300px;
+    position: absolute;
+    filter: blur(1px);
+  }
+  section#images #rayones {
+    top: 38%;
+    left: -5%;
+    height: 500px;
+    width: 300px;
+    position: absolute;
+    filter: blur(3px);
+  }
+  section#images #manchas {
+    display: none;
+  }
+  body {
+    position: relative;
+    background-image: url(./imgs/manchas.png);
+  }
+}
 
 /* -------------------           DESKTOP         ---------------------- */
 
@@ -175,13 +220,44 @@ div#registro a {
     grid-template-rows: repeat(1fr, 6) ;
   }
 
+  section#images #bike {
+    top: 200px;
+    left:25%;
+    width: 300px;
+    position: absolute;
+    filter: blur(1px)
+  }
+  section#images #rayones {
+    top: 5%;
+    right: 5%;
+    height: 500px;
+    width: 300px;
+    position: absolute;
+    filter: blur(3px)
+  }
+  section#images #manchas {
+    top: 10;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    filter: blur(2px)
+  }
+
   section#title {
     grid-column: 2/4;
     grid-row: 1/3;
   }
+
+  section#title #logo img {
+    margin-top: 10px;
+  }
+  section#title #logo {
+    background-color: #111;
+  }
+
   section#dates {
     grid-column: 2/4;
-    grid-row: 3/4;
+    grid-row: 2/4;
   }
   section#description {
     grid-column: 1/2;

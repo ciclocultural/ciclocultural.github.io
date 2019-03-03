@@ -1,7 +1,11 @@
 body {
   margin: 0;
-  background-color: #aaa;
+  background-color: #111;
+  color: white;
   padding: 0 10px;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1.3em;
+  text-shadow: #111 1px 1px 2px;
 }
 
 #submit {
@@ -11,6 +15,28 @@ body {
   background-color: red;
 }
 
+.image {
+  position: absolute;
+  filter: blur(1px);
+  z-index: -1;
+}
+
+
+
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 10px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
 
 textarea {
   max-width: 90vw;
