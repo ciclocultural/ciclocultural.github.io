@@ -89,6 +89,11 @@ section#title #logo img {
   max-height: 100%;
 }
 
+section#fb img {
+  padding-top: 50px;
+  width: 150px;
+}
+
 section#dates .date {
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -97,6 +102,10 @@ section#dates .date {
   margin: auto;
   justify-items: center;
   margin-top: 10px;
+}
+
+section#dates .date img {
+  width: 33px;
 }
 
 section#dates .date .day {
@@ -247,6 +256,12 @@ section#description h4{
     grid-column: 2/4;
     grid-row: 1/3;
   }
+
+  section#fb {
+    grid-column: 2/4;
+    grid-row: 3/4;
+  }
+
 
   section#title #logo img {
     margin-top: 10px;
